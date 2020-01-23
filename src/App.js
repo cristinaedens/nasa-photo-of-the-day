@@ -9,9 +9,9 @@ function App() {
   
 
   useEffect(()=> {
-    axios.get(`https://api.nasa.gov/planetary/apod?date=${"2020-01-22"}&api_key=o5SHwwrXZXk6O4JRf5m4dAosTNLzeum3aMJ3ylmt`)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=o5SHwwrXZXk6O4JRf5m4dAosTNLzeum3aMJ3ylmt`)
     .then(response =>{
-      console.log(response)
+      // console.log(response)
       setData(response.data)
     })
     .catch(error =>{
