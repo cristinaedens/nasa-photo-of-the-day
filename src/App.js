@@ -24,8 +24,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      
-      <Card data={data}/>
+       <Card data={data}/>
     </div>
   );
 }
