@@ -2,6 +2,9 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import "./App.css";
 import Card from "./Components/Card";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from "./Components/Navigation";
+
 
 function App() {
 
@@ -20,10 +23,8 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <p>
-        {/* Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀! */}
-      </p>
+      <NavBar/>
+      
       <Card data={data}/>
     </div>
   );
